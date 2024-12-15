@@ -7,6 +7,13 @@
   padding: 60px;
 }
 
+@media (max-width: 800px) {
+  .header {
+    padding: 40px;
+    flex-direction: column-reverse;
+  }
+}
+
 .list {
   font-family: "Poppins", sans-serif;
 }
@@ -15,7 +22,20 @@
   display: flex;
   align-items: center;
   gap: 30px;
-  font-size: 18px;
+  font-size: 25px;
+}
+
+@media (max-width: 1200px) {
+  .navigation-list {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .navigation-list {
+    font-size: 25px;
+    margin-top: 25px;
+  }
 }
 
 .contact-list {
@@ -23,6 +43,29 @@
   flex-direction: column;
   gap: 5px;
   font-size: 14px;
+}
+
+@media (max-width: 1200px) {
+  .contact-list {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 800px) {
+  .contact-list {
+    display: none;
+  }
+}
+
+.contact-item {
+  gap: 5px;
+  color: white;
+  transition: color 250ms ease;
+}
+
+.contact-item:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .navigation-item {
@@ -52,5 +95,17 @@
 
 .logo {
   font-family: "Kanit", sans-serif;
-  font-size: 25px;
+  font-size: 35px;
+}
+
+@media (max-width: 1200px) {
+  .logo {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 800px) {
+  .logo {
+    font-size: 30px;
+  }
 }
