@@ -1,3 +1,45 @@
+.hero {
+  width: 100%;
+  margin: auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .video {
   max-width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.offer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 500px;
+  z-index: 1;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  background-color: #333333d5;
+  box-shadow: 14px 14px 33px -8px rgb(0, 0, 0);
+  padding: 30px;
+  width: 240px;
+  height: 240px;
+  border-radius: 10px;
+}
+
+.title {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.icon {
+  margin-top: 30px;
 }
