@@ -8,24 +8,28 @@
 }
 .video {
   max-width: 100%;
-  position: absolute;
-  top: 0;
+  margin-bottom: 50px;
 }
 
 .offer {
+  position: absolute;
+  top: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 50px;
-  margin-top: 500px;
   z-index: 1;
+}
+
+@media (max-width: 1500px) {
+  .offer {
+    top: 30vh;
+  }
 }
 
 @media (max-width: 1200px) {
   .offer {
     max-width: 700px;
-    max-height: 80px;
-    margin-top: 400px;
     text-align: center;
   }
 }
@@ -34,14 +38,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
   background-color: #333333d5;
   box-shadow: 14px 14px 33px -8px rgb(0, 0, 0);
   padding: 30px;
   width: 240px;
   height: 240px;
   border-radius: 10px;
-  border: 1px solid orange;
+}
+
+@media (max-width: 1080px) {
+  .product {
+    width: 400px;
+  }
 }
 
 .title {
