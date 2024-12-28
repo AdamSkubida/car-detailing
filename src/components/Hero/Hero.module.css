@@ -8,7 +8,13 @@
 }
 .video {
   max-width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 90px;
+}
+
+@media (max-width: 768px) {
+  .video {
+    display: none;
+  }
 }
 
 .offer {
@@ -31,6 +37,23 @@
   .offer {
     max-width: 700px;
     text-align: center;
+    top: 25vh;
+  }
+}
+
+@media (max-width: 950px) {
+  .offer {
+    top: 25vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer {
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    margin-bottom: 50px;
+    font-size: 30px;
   }
 }
 
@@ -47,9 +70,17 @@
   border-radius: 10px;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 950px) {
+  .product {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
   .product {
     width: 400px;
+    height: 400px;
   }
 }
 
@@ -67,5 +98,19 @@
   .icon {
     width: 140px;
     height: 140px;
+  }
+}
+
+@media (max-width: 950px) {
+  .icon {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .icon {
+    width: 200px;
+    height: 200px;
   }
 }

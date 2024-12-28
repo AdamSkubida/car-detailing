@@ -1,4 +1,5 @@
 import css from "./Content.module.css";
+import { Link } from "react-router-dom";
 
 export const Content = () => {
   return (
@@ -32,6 +33,11 @@ export const Content = () => {
               </figure>
             </li>
           </ul>
+          <div className={css["btn-box"]}>
+            <Link to="/">
+              <batton className={css.btn}>SPRAWDŹ NASZĄ OFERTĘ</batton>
+            </Link>
+          </div>
         </div>
       </div>
     </>
