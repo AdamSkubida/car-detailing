@@ -1,7 +1,23 @@
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import css from "./Header.module.css";
 
 export const Header = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
       <div className={css.header}>
@@ -28,6 +44,27 @@ export const Header = () => {
                 detailing@gmail.com
               </li>
             </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        className={`${css["small-header"]} ${isScrolled ? css["show"] : ""}`}
+      >
+        <div className={css["small-wrapper"]}>
+          <nav className={css["small-navigation"]}>
+            <ul className={`${css["small-list"]} ${css["small-list"]}`}>
+              <li className={`${css["small-item"]} ${css["navigation-item"]}`}>
+                O nas
+              </li>
+              <li className={`${css["small-item"]} ${css["navigation-item"]}`}>
+                Cennik
+              </li>
+            </ul>
+          </nav>
+          <div className={css["small-logo"]}>
+            <Link to="/">
+              <h2>DeresDetailing</h2>
+            </Link>
           </div>
         </div>
       </div>

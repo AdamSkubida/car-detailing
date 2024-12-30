@@ -1,0 +1,38 @@
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 90px;
+  background-color: rgb(37, 36, 36, 1);
+  padding: 90px 0;
+}
+
+.wrapper {
+  max-width: 1280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.image {
+  width: 200px;
+  border-radius: 5px;
+  flex-basis: calc((100% - 200px) / 4);
+  transition: scale 200ms ease-in-out, box-shadow 200ms ease-in-out;
+}
+
+@media (max-width: 880px) {
+  .image {
+    flex-basis: calc((100% - 200px) / 3);
+  }
+}
+
+.image:hover,
+.image:focus {
+  scale: 1.2;
+  box-shadow: 14px 14px 33px -8px rgb(0, 0, 0);
+  cursor: pointer;
+}

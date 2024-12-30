@@ -35,7 +35,7 @@ export const Content = () => {
           </ul>
           <div className={css["btn-box"]}>
             <Link to="/">
-              <batton className={css.btn}>SPRAWDŹ NASZĄ OFERTĘ</batton>
+              <div className={css.btn}>SPRAWDŹ NASZĄ OFERTĘ</div>
             </Link>
           </div>
         </div>
