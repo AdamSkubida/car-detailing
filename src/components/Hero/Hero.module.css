@@ -85,6 +85,20 @@
   }
 }
 
+@media (max-width: 500px) {
+  .product {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 425px) {
+  .product {
+    width: 250px;
+    height: 250px;
+  }
+}
+
 .title {
   font-family: "Kanit", sans-serif;
   font-weight: 400;
