@@ -1,0 +1,106 @@
+.section {
+  background-color: rgb(37, 36, 36, 1);
+  padding: 45px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1280px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+.box {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+
+.logo {
+  font-family: "Kanit", sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 498px) {
+  .logo {
+    text-align: center;
+  }
+}
+
+.copy {
+  font-family: "Courier New", Courier, monospace;
+  margin-left: 5px;
+  font-weight: 300;
+}
+
+.adress-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+@media (max-width: 498px) {
+  .adress-list {
+    text-align: center;
+  }
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+@media (max-width: 442px) {
+  .contact-list {
+    text-align: center;
+  }
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 100%;
+  padding: 5px;
+  width: 35px;
+  height: 35px;
+  transition: border 250ms ease-in-out;
+}
+
+.social-item:hover,
+.social-item:focus {
+  border: 1px solid orange;
+  cursor: pointer;
+}
+
+.social-item svg {
+  transition: fill 250ms ease-in-out;
+}
+
+.mail {
+  width: 25px;
+  height: 25px;
+}
+
+.social-item:hover svg {
+  fill: orange;
+}

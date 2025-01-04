@@ -3,6 +3,7 @@ import { Hero } from "./Hero";
 import { Content } from "./Content";
 import { Gallery } from "./Gallery";
 import { Contact } from "./Contact";
+import { Footer } from "./Footer";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Content />
       <Gallery />
       <Contact />
+      <Footer />
     </>
   );
 };

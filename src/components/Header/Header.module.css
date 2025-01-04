@@ -136,6 +136,12 @@
   }
 }
 
+@media (max-width: 375px) {
+  .logo {
+    font-size: 28px;
+  }
+}
+
 /* SMALL HEADER STYLES */
 
 .small-header {

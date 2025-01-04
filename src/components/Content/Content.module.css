@@ -114,3 +114,9 @@
     width: 300px;
   }
 }
+
+@media (max-width: 375px) {
+  .btn {
+    width: 280px;
+  }
+}
