@@ -2,6 +2,7 @@ import { Header } from "./Header";
 import { Hero } from "./Hero";
 import { Content } from "./Content";
 import { Gallery } from "./Gallery";
+import { Contact } from "./Contact";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Hero />
       <Content />
       <Gallery />
+      <Contact />
     </>
   );
 };
