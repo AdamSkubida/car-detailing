@@ -25,14 +25,16 @@ export const Header = () => {
           <nav className={css.navigation}>
             <ul className={`${css.list} ${css["navigation-list"]}`}>
               <li className={`${css.item} ${css["navigation-item"]}`}>O nas</li>
+              <Link to="/offer">
               <li className={`${css.item} ${css["navigation-item"]}`}>
                 Cennik
               </li>
+              </Link>
             </ul>
           </nav>
           <div className={css.logo}>
             <Link to="/">
-              <h2>DeresDetailing</h2>
+              <h2>CarDetailing</h2>
             </Link>
           </div>
           <div className={css.contact}>
@@ -56,14 +58,16 @@ export const Header = () => {
               <li className={`${css["small-item"]} ${css["navigation-item"]}`}>
                 O nas
               </li>
+              <Link to="/offer">
               <li className={`${css["small-item"]} ${css["navigation-item"]}`}>
                 Cennik
               </li>
+              </Link>
             </ul>
           </nav>
           <div className={css["small-logo"]}>
             <Link to="/">
-              <h2>DeresDetailing</h2>
+              <h2>CarDetailing</h2>
             </Link>
           </div>
         </div>

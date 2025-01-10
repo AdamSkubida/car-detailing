@@ -34,7 +34,7 @@ export const Content = () => {
             </li>
           </ul>
           <div className={css["btn-box"]}>
-            <Link to="/">
+            <Link to="/offer">
               <div className={css.btn}>SPRAWDŹ NASZĄ OFERTĘ</div>
             </Link>
           </div>

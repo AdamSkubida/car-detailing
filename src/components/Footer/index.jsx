@@ -7,7 +7,7 @@ export const Footer = () => {
         <div className={css.wrapper}>
           <div className={css.box}>
             <p className={css.logo}>
-              DeresDetailing<span className={css.copy}>&copy;</span>
+             CarDetailing<span className={css.copy}>&copy;</span>
             </p>
             <ul className={css["adress-list"]}>
               <li className={css.item}>Trzebinia ul. Dąbrowskiego 16</li>
