@@ -8,7 +8,7 @@ export const offersData = {
     {
       title: "Medium",
       desc: "2-warstwowa ochrona lakieru, trwałość do 3 lub 5 lat.",
-      price: "1700zł (3 lata) / 2100zł (5 lat)",
+      price: "od 1700zł",
     },
     {
       title: "Premium",

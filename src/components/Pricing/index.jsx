@@ -39,10 +39,14 @@ export const Pricing = () => {
           <div className={css.offers}>
             <div className={css.box}>
               {offersData[activeOption].map((offer) => (
-                <div key={offer.title} className={css["offer-card"]}>
-                  <h3 className={css["offer-title"]}>{offer.title}</h3>
-                  <p className={css["offer.desc"]}>{offer.desc}</p>
-                  <p className={css["offer-price"]}>{offer.price}</p>
+                <div className={css["card-wrap"]}>
+                  <div key={offer.title} className={css["offer-card"]}>
+                    <div className={css.separator}>
+                      <h3 className={css["offer-title"]}>{offer.title}</h3>
+                      <p className={css["offer-dsc"]}>{offer.desc}</p>
+                    </div>
+                    <p className={css["offer-price"]}>{offer.price}</p>
+                  </div>
                 </div>
               ))}
             </div>
