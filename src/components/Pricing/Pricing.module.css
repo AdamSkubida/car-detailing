@@ -1,17 +1,18 @@
 .container {
   margin: 0 auto;
-  margin-top: 116px;
+  margin-top: 130px;
   margin-bottom: 90px;
-  height: 500px;
   background-color: rgb(37, 36, 36, 1);
 }
 
 .wrapper {
   max-width: 1280px;
+  margin: 0 auto;
 }
 
 .options {
   padding-top: 40px;
+  margin-bottom: 90px;
 }
 
 .option-list {
@@ -35,5 +36,35 @@
 
 .active {
   color: orange;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.offers {
+  max-width: 1280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-bottom: 90px;
+}
+
+.offer-card {
+  background-color: #2a2a2a;
+  box-shadow: 14px 14px 33px -8px rgb(0, 0, 0);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.offer-title {
+  font-family: "Kanit", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: white;
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }

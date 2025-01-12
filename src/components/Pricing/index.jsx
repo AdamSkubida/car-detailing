@@ -1,5 +1,6 @@
 import { useState } from "react";
 import css from "./Pricing.module.css";
+import { offersData } from "./offersData";
 
 export const Pricing = () => {
   const options = [
@@ -9,7 +10,7 @@ export const Pricing = () => {
     "MYCIE SAMOCHODU",
   ];
 
-  const [activeOption, setActiveOption] = useState("POWOŁOKA CERAMICZNA");
+  const [activeOption, setActiveOption] = useState(options[0]);
 
   const handleClick = (option) => {
     setActiveOption(option);
@@ -35,7 +36,17 @@ export const Pricing = () => {
               ))}
             </ul>
           </div>
-          <div className={css.offers}></div>
+          <div className={css.offers}>
+            <div className={css.box}>
+              {offersData[activeOption].map((offer) => (
+                <div key={offer.title} className={css["offer-card"]}>
+                  <h3 className={css["offer-title"]}>{offer.title}</h3>
+                  <p className={css["offer.desc"]}>{offer.desc}</p>
+                  <p className={css["offer-price"]}>{offer.price}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </>
