@@ -20,7 +20,7 @@ export const offersData = {
     {
       title: "One-Step",
       desc: "Usuwanie 40%-60% rys i hologramów.",
-      price: "750 - 900zł (zależnie od segmentu auta)",
+      price: "750 - 900zł",
     },
     {
       title: "Two-Step",
@@ -58,17 +58,17 @@ export const offersData = {
       price: "50zł",
     },
     {
-      title: "Premium",
+      title: "Medium",
       desc: "Mycie wstępne, mycie frontów felg, nadkoli, wnęk i wnętrza felg, aktywna piana, dressing na opony.",
       price: "120zł",
     },
     {
-      title: "Ultimate",
+      title: "Premium",
       desc: "Mycie detailingowe + usuwanie lotnej rdzy, smoły, żywicy, glinkowanie.",
       price: "220zł",
     },
     {
-      title: "Pakiet Mycie + Sprzątanie",
+      title: "Ultimate",
       desc: "Mycie Premium + Sprzątanie Medium",
       price: "400zł",
     },

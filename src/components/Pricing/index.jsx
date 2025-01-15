@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import css from "./Pricing.module.css";
 import { offersData } from "./offersData";
 
@@ -11,30 +11,53 @@ export const Pricing = () => {
   ];
 
   const [activeOption, setActiveOption] = useState(options[0]);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   const handleClick = (option) => {
     setActiveOption(option);
     console.log(`option: ${option}`);
   };
 
+  const handleResize = useCallback(() => {
+    setIsMobile(window.innerWidth <= 768);
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [handleResize]);
+
   return (
     <>
       <div className={css.container}>
         <div className={css.wrapper}>
           <div className={css.options}>
-            <ul className={css["option-list"]}>
-              {options.map((option) => (
-                <li
-                  key={option}
-                  className={`${css["option-item"]} ${
-                    activeOption === option ? css.active : ""
-                  }`}
-                  onClick={() => handleClick(option)}
-                >
-                  {option}
-                </li>
-              ))}
-            </ul>
+            <div className={css["select-label"]}>Wybierz Opcję</div>
+            {isMobile ? (
+              <select
+                className={css["mobile-option-list"]}
+                value={activeOption}
+                onChange={(e) => handleClick(e.target.value)}
+              >
+                {options.map((option) => (
+                  <option key={option}>{option}</option>
+                ))}
+              </select>
+            ) : (
+              <ul className={css["option-list"]}>
+                {options.map((option) => (
+                  <li
+                    key={option}
+                    className={`${css["option-item"]} ${
+                      activeOption === option ? css.active : ""
+                    }`}
+                    onClick={() => handleClick(option)}
+                  >
+                    {option}
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
           <div className={css.offers}>
             <div className={css.box}>
