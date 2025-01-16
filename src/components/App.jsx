@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Home from "./Home";
 import Offer from "./Offer";
+import About from "./About";
 
 const App = () => {
   const ScrollToTop = () => {
@@ -21,6 +22,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/offer" element={<Offer />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </>
   );

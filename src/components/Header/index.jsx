@@ -24,11 +24,15 @@ export const Header = () => {
         <div className={css.wrapper}>
           <nav className={css.navigation}>
             <ul className={`${css.list} ${css["navigation-list"]}`}>
-              <li className={`${css.item} ${css["navigation-item"]}`}>O nas</li>
+              <Link to="/about">
+                <li className={`${css.item} ${css["navigation-item"]}`}>
+                  O nas
+                </li>
+              </Link>
               <Link to="/offer">
-              <li className={`${css.item} ${css["navigation-item"]}`}>
-                Cennik
-              </li>
+                <li className={`${css.item} ${css["navigation-item"]}`}>
+                  Cennik
+                </li>
               </Link>
             </ul>
           </nav>
@@ -55,13 +59,19 @@ export const Header = () => {
         <div className={css["small-wrapper"]}>
           <nav className={css["small-navigation"]}>
             <ul className={`${css["small-list"]} ${css["small-list"]}`}>
-              <li className={`${css["small-item"]} ${css["navigation-item"]}`}>
-                O nas
-              </li>
+              <Link to="/about">
+                <li
+                  className={`${css["small-item"]} ${css["navigation-item"]}`}
+                >
+                  O nas
+                </li>
+              </Link>
               <Link to="/offer">
-              <li className={`${css["small-item"]} ${css["navigation-item"]}`}>
-                Cennik
-              </li>
+                <li
+                  className={`${css["small-item"]} ${css["navigation-item"]}`}
+                >
+                  Cennik
+                </li>
               </Link>
             </ul>
           </nav>
