@@ -14,6 +14,11 @@ export const Us = () => {
             <span>,</span> a Twój samochód odwdzięczy się pięknym wyglądem
             <span>!</span>
           </div>
+          <div className={css["mobile-dsc"]}>
+            Lubisz<span>,</span> gdy Twój samochód lśni<span>?</span> My też
+            <span>!</span> Profesjonalny detailing<span>,</span> ochrona i
+            renowacja lakieru<span>.</span> Zaufaj nam<span>!</span>
+          </div>
           <h2 className={css["team-title"]}>Nasz zepsół</h2>
           <div className={css.team}>
             {employers.map((employee) => (
