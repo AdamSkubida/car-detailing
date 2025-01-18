@@ -6,16 +6,13 @@ export const Us = () => {
     <>
       <div className={css.container}>
         <div className={css.wrapper}>
-          <div className={css["dsc-wrapp"]}>
-            <div className={css.dsc}>
-              Lubisz<span>,</span> gdy Twój samochód lśni<span>?</span> My też
-              <span>!</span> Zajmujemy się profesjonalnym detailingiem
-              <span>,</span> oferując pielęgnację
-              <span>,</span> ochronę i renowację lakieru<span>.</span> Zaufaj
-              nam
-              <span>,</span> a Twój samochód odwdzięczy się pięknym wyglądem
-              <span>!</span>
-            </div>
+          <div className={css.dsc}>
+            Lubisz<span>,</span> gdy Twój samochód lśni<span>?</span> My też
+            <span>!</span> Zajmujemy się profesjonalnym detailingiem
+            <span>,</span> oferując pielęgnację
+            <span>,</span> ochronę i renowację lakieru<span>.</span> Zaufaj nam
+            <span>,</span> a Twój samochód odwdzięczy się pięknym wyglądem
+            <span>!</span>
           </div>
           <div className={css["mobile-dsc"]}>
             Lubisz<span>,</span> gdy Twój samochód lśni<span>?</span> My też
