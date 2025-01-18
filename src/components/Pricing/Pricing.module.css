@@ -5,6 +5,12 @@
   background-color: rgb(37, 36, 36, 1);
 }
 
+@media (max-width: 1200px) {
+  .container {
+    margin-top: 116px;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     margin-top: 0;

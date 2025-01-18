@@ -30,6 +30,12 @@
   }
 }
 
+@media (max-width: 425px) {
+  .image {
+    width: 310px;
+  }
+}
+
 .image:hover,
 .image:focus {
   scale: 1.2;

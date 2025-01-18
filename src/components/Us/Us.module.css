@@ -5,6 +5,12 @@
   background-color: rgb(37, 36, 36, 1);
 }
 
+@media (max-width: 1200px) {
+  .container {
+    margin-top: 116px;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     margin-top: 0;
@@ -22,15 +28,20 @@
   padding-bottom: 90px;
 }
 
+/* .dsc-wrapp {
+  filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.3));
+} */
+
 .dsc {
   max-width: 600px;
+  background-color: #2a2a2a;
   color: white;
   font-size: 25px;
   font-family: "Poppins", sans-serif;
   text-align: center;
   margin-bottom: 50px;
-  border: 2px solid orange;
-  border-radius: 10px;
+  border-top: 1px solid orange;
+  border-bottom: 1px solid orange;
   padding: 30px;
   box-shadow: 20px 20px 30px -10px rgba(0, 0, 0, 0.8);
 }
@@ -49,13 +60,14 @@
 
 .mobile-dsc {
   max-width: 600px;
+  background-color: #2a2a2a;
   color: white;
   font-size: 20px;
   font-family: "Poppins", sans-serif;
   text-align: center;
   margin-bottom: 50px;
-  border: 2px solid orange;
-  border-radius: 10px;
+  border-top: 1px solid orange;
+  border-bottom: 1px solid orange;
   padding: 30px;
   box-shadow: 20px 20px 30px -10px rgba(0, 0, 0, 0.8);
 }
@@ -101,8 +113,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid orange;
-  border-radius: 10px;
+  border-top: 1px solid orange;
+  border-bottom: 1px solid orange;
   padding: 10px;
   background-color: #2a2a2a;
   box-shadow: 20px 20px 30px -10px rgba(0, 0, 0, 0.8);
